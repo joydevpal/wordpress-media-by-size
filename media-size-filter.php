@@ -26,7 +26,7 @@ function jp_media_columns_filesize( $posts_columns ) {
 }
 
 /**
- * Display File Size custom column in the Media list table.
+ * Display File Size column in the Media list table.
  *
  * @param string $column_name Name of the custom column.
  * @param int    $post_id Current Attachment ID.
@@ -44,7 +44,7 @@ function jp_media_custom_column_filesize( $column_name, $post_id ) {
 }
 
 /**
- * Adjust File Size column on Media Library page in WP admin
+ * Adjust File Size column on Media Library page in admin
  */
 add_action( 'admin_print_styles-upload.php', 'jp_filesize_column_filesize' );
 
